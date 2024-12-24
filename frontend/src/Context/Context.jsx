@@ -15,7 +15,7 @@ function ReactContext({ children }) {
 
     const [displayFoods, setDisplayFoods] = useState([])
 
-    let url = 'https://tomato-food-web-five.vercel.app'
+    let url = 'https://tomato-food-web-flame.vercel.app'
 
     async function fetchFoods() {
         let res = await axios.get(`${url}/api/food/get`)
