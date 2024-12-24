@@ -70,7 +70,7 @@ foodList.post('/delete', async (req, res) => {
             })
         }
 
-        fs.rm(`uploads/${deleteItem.filename}`, (err) => { })
+        fs.rm(`tmp/${deleteItem.filename}`, (err) => { })
 
         return res.json({
             success: true,
